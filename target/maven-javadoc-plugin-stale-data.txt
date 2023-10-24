@@ -1,0 +1,59 @@
+@options
+@packages
+-classpath
+'C:/Users/RESCOM-1/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar;C:/Users/RESCOM-1/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar;C:/Users/RESCOM-1/.m2/repository/unknown/binary/AbsoluteLayout/SNAPSHOT/AbsoluteLayout-SNAPSHOT.jar;C:/Users/RESCOM-1/.m2/repository/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.jar;C:/Users/RESCOM-1/.m2/repository/javax/xml/bind/activation/1.0.2/activation-1.0.2.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'18'
+-sourcepath
+'D:/imam/Kerja Joki/siloam/SIRSsiloam/src/main/java;D:/imam/Kerja Joki/siloam/SIRSsiloam/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/imam/Kerja Joki/siloam/SIRSsiloam/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'SIRSsiloam 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'SIRSsiloam 1.0-SNAPSHOT API'
+entity
+main
+panel
+repository
+service
+util
+C:\Users\RESCOM-1\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar = 1696693624580
+C:\Users\RESCOM-1\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar = 1696693625671
+C:\Users\RESCOM-1\.m2\repository\unknown\binary\AbsoluteLayout\SNAPSHOT\AbsoluteLayout-SNAPSHOT.jar = 1697197820656
+C:\Users\RESCOM-1\.m2\repository\javax\mail\javax.mail-api\1.6.2\javax.mail-api-1.6.2.jar = 1697310458244
+C:\Users\RESCOM-1\.m2\repository\javax\xml\bind\activation\1.0.2\activation-1.0.2.jar = 1697350490056
+D:\imam\Kerja Joki\siloam\SIRSsiloam\src\main\java = 1697350310106
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\generated-sources\annotations = 1697349220822
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\allclasses-index.html = 1697352987432
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\allpackages-index.html = 1697352987434
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\copy.svg = 1697352987473
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\element-list = 1697352987233
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\help-doc.html = 1697352987469
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\index-all.html = 1697352987464
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\index.html = 1697352987409
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\javadoc.bat = 1697352972807
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\jquery-ui.overrides.css = 1697352987494
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\member-search-index.js = 1697352987438
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\module-search-index.js = 1697352987435
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\overview-summary.html = 1697352987466
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\overview-tree.html = 1697352987405
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\package-search-index.js = 1697352987436
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\script.js = 1697352987472
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\search.js = 1697352987474
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\serialized-form.html = 1697352987313
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\stylesheet.css = 1697352987471
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\tag-search-index.js = 1697352987439
+D:\imam\Kerja Joki\siloam\SIRSsiloam\target\apidocs\type-search-index.js = 1697352987437
