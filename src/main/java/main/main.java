@@ -8,6 +8,7 @@ import panel.Dasboard;
 import panel.Login;
 import panel.buatpasswordbaru;
 import panel.kirimkode;
+import panel.verifikasi;
 
 
 /**
@@ -21,11 +22,7 @@ public class main extends javax.swing.JFrame {
      */
     public main() {
         initComponents();
-        kirimkode apa = new kirimkode();
-        apa.setSize(1366,768);
-        this.add(apa);
-        this.revalidate();
-        this.repaint();
+        showlogin();
     }
      public void showlogin(){
         Login apa = new Login();
@@ -43,6 +40,20 @@ public class main extends javax.swing.JFrame {
     }
     public void showkode(){
         kirimkode apa = new kirimkode();
+        apa.setSize(1366,768);
+        this.add(apa);
+        this.revalidate();
+        this.repaint();
+    }
+    public void showver(){
+        verifikasi apa = new verifikasi();
+        apa.setSize(1366,768);
+        this.add(apa);
+        this.revalidate();
+        this.repaint();
+    }
+    public void showpass(){
+        buatpasswordbaru apa = new buatpasswordbaru();
         apa.setSize(1366,768);
         this.add(apa);
         this.revalidate();

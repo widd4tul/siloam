@@ -33,6 +33,11 @@
     <artifactId>activation</artifactId>
     <version>1.0.2</version>
     </dependency>
+    <dependency>
+    <groupId>net.java.dev.timingframework</groupId>
+    <artifactId>timingframework</artifactId>
+    <version>1.0</version>
+</dependency>
     </dependencies>
     
     <properties>

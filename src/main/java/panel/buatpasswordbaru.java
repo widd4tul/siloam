@@ -4,6 +4,9 @@
  */
 package panel;
 import java.awt.Color;
+import javax.swing.SwingUtilities;
+import main.main;
+import service.Auth;
 /**
  *
  * @author RESCOM-1
@@ -13,6 +16,9 @@ public class buatpasswordbaru extends javax.swing.JPanel {
     /**
      * Creates new form buatpasswordbaru
      */
+    Auth a = new Auth();
+    verifikasi ab = new verifikasi();
+    private String username = a.username;
     public buatpasswordbaru() {
         initComponents();
     }
@@ -35,14 +41,21 @@ public class buatpasswordbaru extends javax.swing.JPanel {
 
         btnubahpassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagebtn/btnubahpass1.png"))); // NOI18N
         btnubahpassword.setText("jLabel1");
+        btnubahpassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnubahpasswordMouseClicked(evt);
+            }
+        });
         add(btnubahpassword);
         btnubahpassword.setBounds(410, 520, 560, 70);
 
-        inputpassword1.setBackground(new Color(0,0,0,0));
+        inputpassword1.setBackground(new java.awt.Color(227, 252, 246));
+        inputpassword1.setBorder(null);
         add(inputpassword1);
         inputpassword1.setBounds(480, 310, 400, 40);
 
-        inputpassword2.setBackground(new Color(0,0,0,0));
+        inputpassword2.setBackground(new java.awt.Color(227, 252, 246));
+        inputpassword2.setBorder(null);
         add(inputpassword2);
         inputpassword2.setBounds(480, 390, 400, 40);
 
@@ -50,6 +63,26 @@ public class buatpasswordbaru extends javax.swing.JPanel {
         add(bg);
         bg.setBounds(0, 0, 1366, 768);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnubahpasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnubahpasswordMouseClicked
+    String pass = inputpassword1.getText();
+    String repeatPass = inputpassword2.getText();
+        if(pass.equals(repeatPass)){
+              boolean changePassword = a.changePass(pass, repeatPass, username);
+        if(changePassword){
+            System.out.println("berhasil");
+            System.out.println(username);
+            a.username = "";
+            this.setVisible(false);
+            main main1 =(main)SwingUtilities.getWindowAncestor(this);
+            main1.showlogin();
+        }else{
+            System.out.println("gagal");
+        }
+        }else{
+            System.out.println("Tidak sama");
+        }
+    }//GEN-LAST:event_btnubahpasswordMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

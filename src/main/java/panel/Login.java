@@ -35,6 +35,7 @@ public class Login extends javax.swing.JPanel {
         btnlogin = new javax.swing.JLabel();
         inputpassword = new javax.swing.JTextField();
         inputusername = new javax.swing.JTextField();
+        txtubahpass = new javax.swing.JLabel();
         bg = new javax.swing.JLabel();
 
         password.addActionListener(new java.awt.event.ActionListener() {
@@ -72,6 +73,15 @@ public class Login extends javax.swing.JPanel {
         add(inputusername);
         inputusername.setBounds(490, 310, 400, 40);
 
+        txtubahpass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagetxt/Lupa password_.png"))); // NOI18N
+        txtubahpass.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtubahpassMouseClicked(evt);
+            }
+        });
+        add(txtubahpass);
+        txtubahpass.setBounds(770, 450, 190, 30);
+
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagebg/login form.png"))); // NOI18N
         add(bg);
         bg.setBounds(0, 0, 1370, 770);
@@ -104,6 +114,12 @@ public class Login extends javax.swing.JPanel {
     }
     }//GEN-LAST:event_btnloginMouseClicked
 
+    private void txtubahpassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtubahpassMouseClicked
+    main wow = (main)SwingUtilities.getWindowAncestor(this);
+    this.setVisible(false);
+    wow.showkode();
+    }//GEN-LAST:event_txtubahpassMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bg;
@@ -112,6 +128,7 @@ public class Login extends javax.swing.JPanel {
     private javax.swing.JTextField inputusername;
     private javax.swing.JButton jButton1;
     private javax.swing.JTextField password;
+    private javax.swing.JLabel txtubahpass;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables
 }

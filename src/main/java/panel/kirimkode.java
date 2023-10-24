@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package panel;
-
+import java.awt.Color;
 import java.lang.System.Logger;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,14 +19,20 @@ import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.swing.SwingUtilities;
+import main.main;
 import service.Auth;
 import util.Conn;
+import view.dialog.dialog_mintakode;
 
 /**
  *
  * @author RESCOM-1
  */
+
 public class kirimkode extends javax.swing.JPanel {
+    Auth a = new Auth();
+    private String username = a.username;
     private String email;
         class poo{
     private String text;
@@ -179,9 +185,14 @@ public void kirim()throws AddressException, MessagingException {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         btnkir = new javax.swing.JLabel();
-        bg = new javax.swing.JLabel();
         inputusername = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        bg = new javax.swing.JLabel();
+
+        jPanel1.setPreferredSize(new java.awt.Dimension(1366, 768));
+        jPanel1.setLayout(null);
 
         btnkir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagebtn/btnkirimkode1.png"))); // NOI18N
         btnkir.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -192,41 +203,35 @@ public void kirim()throws AddressException, MessagingException {
                 btnkirMouseEntered(evt);
             }
         });
+        jPanel1.add(btnkir);
+        btnkir.setBounds(460, 530, 426, 70);
+        jPanel1.add(inputusername);
+        inputusername.setBounds(492, 354, 386, 61);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagebtn/btnkembali1.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(10, 710, 190, 50);
 
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagebg/ko ferifikasi.png"))); // NOI18N
+        jPanel1.add(bg);
+        bg.setBounds(0, 0, 1370, 770);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(472, 472, 472)
-                        .addComponent(btnkir))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(492, 492, 492)
-                        .addComponent(inputusername, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(472, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 1370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(398, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(357, Short.MAX_VALUE)
-                .addComponent(inputusername, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79)
-                .addComponent(btnkir, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(203, 203, 203))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -256,6 +261,21 @@ public void kirim()throws AddressException, MessagingException {
                                 String token = getapa();
                                 wew.kirimTokenDB(inputusername.getText(), token);
                                 System.out.println(token);
+                                    try {
+//                                        verifikasi apa = new verifikasi();
+//                                 this.setVisible(false);
+//                                 apa.setVisible(true);
+                                main main =(main)SwingUtilities.getWindowAncestor(this);
+//                                dialog_mintakode a = new dialog_mintakode(main);
+//                                a.showPopUp();
+                                this.setVisible(false);
+                                main.showver();
+                                    } catch (Exception e) {
+                                        System.out.println(e.getMessage());
+                                    }
+                                 
+//                               jPanel1.setVisible(false);
+//                               jPanel2.setVisible(true);
                             }
                     } catch (Exception e) {
                         System.out.println(e.getMessage().toString());
@@ -269,10 +289,18 @@ public void kirim()throws AddressException, MessagingException {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnkirMouseEntered
 
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    main main =(main)SwingUtilities.getWindowAncestor(this);
+    this.setVisible(false);
+    main.showlogin();
+    }//GEN-LAST:event_jLabel1MouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bg;
     private javax.swing.JLabel btnkir;
     private javax.swing.JTextField inputusername;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
