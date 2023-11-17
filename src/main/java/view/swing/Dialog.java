@@ -1,5 +1,5 @@
 
-package view.dialog;
+package view.swing;
 import java.awt.Color;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

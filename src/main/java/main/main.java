@@ -7,6 +7,7 @@ package main;
 import panel.Dasboard;
 import panel.Login;
 import panel.buatpasswordbaru;
+import panel.datamaster;
 import panel.kirimkode;
 import panel.verifikasi;
 
@@ -59,6 +60,13 @@ public class main extends javax.swing.JFrame {
         this.revalidate();
         this.repaint();
     }
+    public void showdatamaster(){
+        datamaster apa = new datamaster();
+        apa.setSize(1366,768);
+        this.add(apa);
+        this.revalidate();
+        this.repaint();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -69,9 +77,10 @@ public class main extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
-        setSize(new java.awt.Dimension(1382, 776));
+        setSize(new java.awt.Dimension(1366, 768));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
