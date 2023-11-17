@@ -8,7 +8,10 @@ import panel.Dasboard;
 import panel.Login;
 import panel.buatpasswordbaru;
 import panel.datamaster;
+<<<<<<< HEAD
 import panel.datamaster_edit;
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
 import panel.kirimkode;
 import panel.verifikasi;
 
@@ -68,6 +71,7 @@ public class main extends javax.swing.JFrame {
         this.revalidate();
         this.repaint();
     }
+<<<<<<< HEAD
     public void showdatamaster_edit(){
         datamaster_edit apa = new datamaster_edit();
         apa.setSize(1366,768);
@@ -75,6 +79,8 @@ public class main extends javax.swing.JFrame {
         this.revalidate();
         this.repaint();
     }
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

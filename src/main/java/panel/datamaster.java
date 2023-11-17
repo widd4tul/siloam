@@ -8,7 +8,10 @@ import entity.data_master;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 import main.main;
+<<<<<<< HEAD
 import panel.datamaster_edit;
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
 import repository.data_masterRepository;
 
 /**
@@ -17,8 +20,11 @@ import repository.data_masterRepository;
  */
 public class datamaster extends javax.swing.JPanel {
     data_masterRepository datamaster = new data_masterRepository();
+<<<<<<< HEAD
     public static int id = 0;
 //    datamaster_edit edit = new datamaster_edit();
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
     /**
      * Creates new form datamaster
      */
@@ -63,10 +69,13 @@ public class datamaster extends javax.swing.JPanel {
         btnkembali = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         table = new view.swing.Table();
+<<<<<<< HEAD
         search = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         btnedit = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
         bg = new javax.swing.JLabel();
 
         setLayout(null);
@@ -95,15 +104,19 @@ public class datamaster extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+<<<<<<< HEAD
         table.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tableMouseClicked(evt);
             }
         });
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
         jScrollPane2.setViewportView(table);
 
         add(jScrollPane2);
         jScrollPane2.setBounds(62, 262, 1240, 380);
+<<<<<<< HEAD
         add(search);
         search.setBounds(51, 150, 300, 40);
 
@@ -128,6 +141,8 @@ public class datamaster extends javax.swing.JPanel {
         });
         add(jLabel3);
         jLabel3.setBounds(600, 145, 200, 60);
+=======
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
 
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagebg/bg datamaster.png"))); // NOI18N
         add(bg);
@@ -140,6 +155,7 @@ public class datamaster extends javax.swing.JPanel {
     main.showdasboard();
     }//GEN-LAST:event_btnkembaliMouseClicked
 
+<<<<<<< HEAD
     private void btneditMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btneditMouseClicked
 //    int baris = table.rowAtPoint(evt.getPoint());
 //        String idd = table.getValueAt(baris, 0).toString();
@@ -199,6 +215,13 @@ public class datamaster extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField search;
+=======
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel bg;
+    private javax.swing.JLabel btnkembali;
+    private javax.swing.JScrollPane jScrollPane2;
+>>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
     private view.swing.Table table;
     // End of variables declaration//GEN-END:variables
 }
