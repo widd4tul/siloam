@@ -92,12 +92,12 @@ public class userRepository implements Repository<user>{
     }
 
     @Override
-    public boolean delete(user us) {
+    public boolean delete(int id) {
         String sql = "delete from "+tableName+" where id = ?";
         try {
             Connection koneksi = (Connection)Conn.configDB();
             PreparedStatement pst = koneksi.prepareStatement(sql);
-            pst.setInt(1, us.getId());
+            pst.setInt(1, id);
             pst.execute();
             return true;
         } catch (Exception e) {

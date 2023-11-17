@@ -15,5 +15,5 @@ public interface Repository<E extends entity.Entity>  {
         
         public boolean update(E entity);
         
-        public boolean delete(E entity);
+        public boolean delete(int id);
 }

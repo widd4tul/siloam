@@ -96,12 +96,12 @@ public class data_dokterRepository implements Repository<data_dokter> {
 }
 
     @Override
-    public boolean delete(data_dokter dokter) {
+    public boolean delete(int id) {
         String sql = "delete from "+tableName+" where id = ?";
         try {
             Connection koneksi = (Connection)Conn.configDB();
             PreparedStatement pst = koneksi.prepareStatement(sql);
-            pst.setInt(1, dokter.getId());
+            pst.setInt(1, id);
             pst.execute();
             return true;
         } catch (Exception e) {

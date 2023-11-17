@@ -41,9 +41,14 @@ public class data_masterRepository implements Repository<data_master> {
         try {
             Connection koneksi = (Connection)Conn.configDB();
             PreparedStatement pst = koneksi.prepareStatement(sql);
-            pst.setInt(1, master.getId());
+            pst.setInt(1, id);
+            ResultSet res = pst.executeQuery();
+            while (res.next()) {                
+                return mapToEntity(res);
+            }
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return master;
     }
@@ -91,12 +96,12 @@ public class data_masterRepository implements Repository<data_master> {
     }
 
     @Override
-    public boolean delete(data_master master) {
+    public boolean delete(int id) {
     String sql = "delete from "+tableName+" where id = ?";
         try {
             Connection koneksi = (Connection)Conn.configDB();
             PreparedStatement pst = koneksi.prepareStatement(sql);
-            pst.setInt(1, master.getId());
+            pst.setInt(1, id);
             pst.execute();
             return true;
         } catch (Exception e) {

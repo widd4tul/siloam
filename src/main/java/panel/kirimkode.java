@@ -23,7 +23,7 @@ import javax.swing.SwingUtilities;
 import main.main;
 import service.Auth;
 import util.Conn;
-import view.dialog.dialog_mintakode;
+import view.swing.dialog_mintakode;
 
 /**
  *

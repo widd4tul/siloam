@@ -18,10 +18,11 @@ public class cek {
         data_masterRepository masterRepository = new data_masterRepository();
         data_dokterRepository dokterRepository = new data_dokterRepository();
         userRepository userRepository = new userRepository();
-        data_master ass = new data_master(2, "debby",32020392,"jl apayaa","jember, 23/02/2004","Laki - laki");  
+        data_master ass = new data_master(4, "restuuu",32020392,"jl apayaa","jember, 23/02/2004","Laki - laki");  
         user ass1 = new user(4 , "anakmu", "ibuku", "sayang", 1);
-            userRepository.get(1).getEmail();
-     
+            masterRepository.update(ass);
+        System.out.println(masterRepository.get(4).getNama());
+//        masterRepository.add(ass);
 
         
 //        String sql = "select * from user";

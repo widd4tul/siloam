@@ -88,12 +88,12 @@ public class rekap_harianRepository implements Repository<rekap_harian>{
     }
 
     @Override
-    public boolean delete(rekap_harian rekap) {
+    public boolean delete(int id) {
     String sql = " delete from "+tableName+ " where id = ?";
         try {
             Connection koneksi = (Connection)Conn.configDB();
             PreparedStatement pst = koneksi.prepareStatement(sql);
-            pst.setInt(1, rekap.getId());
+            pst.setInt(1, id);
             pst.execute();
             return true;
         } catch (Exception e) {
