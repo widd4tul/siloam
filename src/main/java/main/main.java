@@ -7,18 +7,16 @@ package main;
 import panel.Dasboard;
 import panel.Login;
 import panel.buatpasswordbaru;
+import panel.datadokter;
+import panel.datadokter_tambah;
 import panel.datamaster;
-<<<<<<< HEAD
 import panel.datamaster_edit;
-=======
->>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
 import panel.kirimkode;
 import panel.verifikasi;
 
-
 /**
  *
- * @author RESCOM-1
+ * @author semafie
  */
 public class main extends javax.swing.JFrame {
 
@@ -27,9 +25,9 @@ public class main extends javax.swing.JFrame {
      */
     public main() {
         initComponents();
-        showlogin();
+        showdasboard();
     }
-     public void showlogin(){
+public void showlogin(){
         Login apa = new Login();
         apa.setSize(1366,768);
         this.add(apa);
@@ -71,7 +69,6 @@ public class main extends javax.swing.JFrame {
         this.revalidate();
         this.repaint();
     }
-<<<<<<< HEAD
     public void showdatamaster_edit(){
         datamaster_edit apa = new datamaster_edit();
         apa.setSize(1366,768);
@@ -79,8 +76,20 @@ public class main extends javax.swing.JFrame {
         this.revalidate();
         this.repaint();
     }
-=======
->>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
+    public void showdatadokter(){
+        datadokter apa = new datadokter();
+        apa.setSize(1366,768);
+        this.add(apa);
+        this.revalidate();
+        this.repaint();
+    }
+    public void showdatadokter_tambah(){
+        datadokter_tambah apa = new datadokter_tambah();
+        apa.setSize(1366,768);
+        this.add(apa);
+        this.revalidate();
+        this.repaint();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

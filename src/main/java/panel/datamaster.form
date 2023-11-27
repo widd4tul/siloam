@@ -67,7 +67,6 @@
               </Table>
             </Property>
           </Properties>
-<<<<<<< HEAD
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tableMouseClicked"/>
           </Events>
@@ -123,11 +122,6 @@
         </Constraint>
       </Constraints>
     </Component>
-=======
-        </Component>
-      </SubComponents>
-    </Container>
->>>>>>> 74982d7584591b2a52f6ff5f42d569d188d606ea
     <Component class="javax.swing.JLabel" name="bg">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
